@@ -1,4 +1,5 @@
 body{
+    background-color: #d3e4ac;
     font-size: 18px;
     font-family: 'Fuzzy Bubbles', cursive;
     margin: 0;
@@ -20,4 +21,15 @@ nav a:hover{
 }
 h1, p, div, nav{
     text-align: center;
+}
+div{
+    border: 1px solid #3d9b06;
+}
+ul li{
+    color: #7a11c5;
+}
+ul li:nth-child(even){
+    font-style: italic;
+    color: #3a7fda
+
 }
