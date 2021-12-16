@@ -31,5 +31,4 @@ ul li{
 ul li:nth-child(even){
     font-style: italic;
     color: #3a7fda
-
 }
