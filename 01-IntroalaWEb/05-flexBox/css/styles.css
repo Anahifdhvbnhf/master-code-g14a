@@ -8,6 +8,7 @@ header{
     background-color: #680397;
     display: flex;
     justify-content:space-between;
+    height: 7vh;
     padding: 0 5px;
 }
 h1, nav{
@@ -33,4 +34,65 @@ nav a{
 }
 nav a:hover{
     background-color: #ac9e05;
+}
+main{
+    display: flex;
+    flex-direction: row;
+}
+aside, section{
+    height: 83vh;
+}
+aside{
+    align-items: center;
+    background-color: #f18057;
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+}
+aside a{
+    color: #000000;
+    font-size: 1.3rem;
+    padding: 5px 0;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+}
+aside a:hover{
+    background-color: #e46714;
+}
+section{
+    background-color: #f3b267;
+    display: flex;
+    flex-flow: row wrap;
+    width: 90%;
+}
+article{
+    flex: 1 1 30%;
+    text-align: center;
+}
+img{
+    height: 100px;
+}
+footer{
+    background-color: #8a068a;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 10vh;
+    width: 100%;
+}
+p, footer a{
+    color: #ffffff;
+    font-size: 1rem;
+}
+p{
+    display: inline;
+    margin: 0;
+}
+footer a i{
+    margin: 0 5px 0 10px;
+}
+.marginIzq{
+    margin-left: 5px;
 }
