@@ -72,17 +72,68 @@
 
 //------1ºDefinir si la cadena de texto es palindremo(izquierda ha derecha) 2º como parametro un entero y si pasa si es par o impar
 
-var numero = prompt("Introduce un numero entero");
+// var numero = prompt("Introduce un numero entero");
 
 
-function numeroImpar(numero){
-    if(numero % 2 ==0){
-        return "par";
+// function numeroImpar(numero){
+//     if(numero % 2 ==0){
+//         return "par";
 
+//     }
+//     else{
+//         return "Impar";
+//     }
+// }
+// var resultado = numeroImpar(numero);
+// alert("El numero " + numero + "es" + resultado);
+
+
+//Definir una funcion la cual determine si una cadena de texto ingresada por un usuario es un palindromo o no.
+
+var texto;
+var resultado;
+
+texto = prompt("Ingrese una oracion");
+
+function palindromo (texto){
+    var cadenaPrincipal = texto.toLowerCase().toUppercase();
+
+    //Convertimos la cadena en un arreglo
+    var letrasEspacios = cadenaPrincipal.split("");
+
+    var cadenaSinEspacio = "";
+    for(i in letrasEspacios){
+        if(letrasEspacios [i] !=" "){
+            cadenaSinEspacio += letrasEspacios[i];
+        }
     }
+
+    var letras = cadenaSinEspacio;
+
+    var revers = cadenaSinEspacio.split("").reverse("");
+
+    var igual = true;
+
+    for(i in letras){
+        if (letras [i] == reverse[i]){
+
+        }
+        else{
+            igual = false;
+        }
+    }
+
+    if(igual){
+        resultado += "Es un palindromo";
+    }
+
     else{
-        return "Impar";
+        resultado += "No es un palindromo";
     }
+
+    return resultado;
 }
-var resultado = numeroImpar(numero);
-alert("El numero " + numero + "es" + resultado);
+resultado = "La cadena que ingresaste : "
+alert(palindromo(texto));
+
+//Deginir una funcion que muestrela informacion sobre una cadena de texto ingresada por un usuario.La funcion debe de determinar si esta formada por mayusculas, minusculas o ambas.
