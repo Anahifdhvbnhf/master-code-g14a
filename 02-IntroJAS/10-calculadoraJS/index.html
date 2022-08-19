@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    
+    <enlace rel="preconectar" href="https://fonts.googleapis.com">
+    <enlace rel="preconectar" href="https://fonts.gstatic.com" crossorigin>
+    <enlace href="https: //fonts.googleapis.com/css2? familia= Titillium+Web:peso@200;400;600 & display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <main id="contenedor">
+        <div class="cajacentro">
+            <section class="columna1">
+                <header>
+                    <h5 id="operaciones" class="tamañoresultados"></h5>
+                    <h2 id="total">0</h2>
+                </header>
+            <div class="gridbotones">                
+                <button onclick="CapturarDatos('7')">7</button>
+                <button onclick="CapturarDatos('8')">8</button>
+                <button onclick="CapturarDatos('8')">9</button>
+                <button onclick="CapturarDatos('/')">/</button>
+                <button onclick="CapturarDatos('4')">4</button>
+                <button onclick="CapturarDatos('5')">5</button>
+                <button onclick="CapturarDatos('6')">6</button>
+                <button onclick="CapturarDatos('x')">x</button>
+                <button onclick="CapturarDatos('1')">1</button>
+                <button onclick="CapturarDatos('2')">2</button>
+                <button onclick="CapturarDatos('3')">3</button>
+                <button onclick="CapturarDatos('+')">+</button>               
+                <button onclick="CapturarDatos('c')">C</button>
+                <button onclick="CapturarDatos('0')">0</button>
+                <button onclick="CapturarDatos('=')">=</button>
+                <button onclick="CapturarDatos('-')">-</button>
+            </div>
+            </section>
+            <aside class="columna2">
+                <h4>Historial</h4>
+                <p id="historial"class="tamañoresultados"></p>
+            </aside>
+        </div>
+    </main>
+</body>
+</html>
