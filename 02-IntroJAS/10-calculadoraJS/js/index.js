@@ -62,8 +62,17 @@ function CapturarDatos(id){
         total = Calculo(array);
         imprimirToral.innerText = total; 
 
-        historial.innerText = operaciones.innerText + '' + id + '' + total;
+        historial.innerHTML = operaciones.innerText + '' + id + '' + total + "<br>" + historial.innerText;
+        
+        operaciones.innerText = "";
+        imprimirToral.innerText = 0;
     }
+
+    else if(id === "c"){
+        operaciones.innerText = "";
+        imprimirToral.innerText = "0";
+    }
+
     else
     {
         numero =Number(id);
