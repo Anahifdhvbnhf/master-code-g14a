@@ -1,22 +1,25 @@
-'uso strict'
+'use strict'
 
 const pamela = {
-    //estructuras de clave valo, key - value
-    ''primer nombre'': 'Pamela'
-    ''apellido'': 'Ortega'
-    ''intereses'': [
+    //estructuras de clave valor o tambien conocido como; key - value
+    "primer Nombre": "Pamela",
+    "apellido": "Ortega",
+    "intereses": [
         'Natacion',
         'Green Day',
         'Harry Potter'
     ],
-    ''x1'':''uno'',
-    ''x2'': ''dos''
+    "x1":"uno",
+    "x2": "dos"
 }
 
 //NOTACION DE PUNTO
 console.log(pamela.apellido);
 
-//NOTACION DE CORCHETES
-console.log(pamela[''primer nombre'']);
-console.log(pamela[¨x¨ + n]);
+//NOTACION DE CORCHETES O BRACKETS
+console.log(pamela["primer Nombre"]);
+let n= 0
+n++
+n++
+console.log(pamela["x" + n]);
 

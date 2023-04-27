@@ -1,1 +1,1 @@
-
+//varianles globales

@@ -1,0 +1,24 @@
+Multiplique 2 numeros cualesquiera, sin usar el simbolo de *
+-Código
+-Diagrama de flujo
+
+let num = prompt("Ingresa los números que quieras que validemos si es PAR, separados por una coma");
+
+Array = num.split(",")
+
+document.write("Los números pares que hay son los siguientes:" + "<br>")
+
+for(let validacion of Array) {
+    if (Number(validacion) % 2 ==0){
+        document.write(`${validacion}</br>`)
+    }
+}
+
+Crear una aplicacion que le solicite al usuario adivinar el numero que esta pensando la computadora, en un rango del 1 al 10.
+Felicitarlo cuando acierte, y darle 3 intentos.
+Si falla expreserle que fallo.
+Manipulando el DOM.
+
+No se vale usar:
+-prompt
+-console log

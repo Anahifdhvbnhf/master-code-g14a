@@ -11,8 +11,12 @@ arr1.shift()
 console.log(arr1.length);
 console.log(arr1);
 
-arr1.forEach(Element = >{
-    console.log(Element);
+for (let i = 0; i < array.length; i++) {
+    console.log(arr1[i]);
+}
+
+arr1.forEach(element => {
+    console.log(element);
 });
 
 
