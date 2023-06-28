@@ -1,0 +1,1 @@
+(()=>{"use strict";console.log(`Hi ${"Anahi"} from G15`)})();
