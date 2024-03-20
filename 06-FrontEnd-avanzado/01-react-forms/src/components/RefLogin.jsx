@@ -3,8 +3,15 @@ import { useRef } from 'react'
 
 const RefLogin = () => {
     const form = useRef(null)
-    const handleSubmit = (event)=> {
+    const handleSubmit = (event) => {
         event.preventDefault() //Este hace que no se recargue la pagina 
+        const forData = new forData(form.current)
+        const data= {
+            username:forData.get('email'),
+            password:forData.get('password')
+
+        }
+        console.log(data)
     }
 
     return (
@@ -12,10 +19,10 @@ const RefLogin = () => {
         <div className='login-container'>
             
             <form className= 'form' ref= {form}>
-                <label htmlFor= 'mail'>Email</label>
+                <label htmlFor= 'email'>Email</label>
                 <input
                     type= 'text'
-                    name= 'mail'
+                    name= 'email'
                     placeholder= 'correo@gamil.com'
                 />
 
