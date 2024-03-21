@@ -2,7 +2,8 @@
 import reactLogo from './assets/react.svg'
 import './App.css'
 //import RefDom from './components/RefDom'
-import RefLogin from './components/RefLogin'
+//import RefLogin from './components/RefLogin'
+import SimpleForm from './components/SimpleForm'
 
 function App() {
 
@@ -15,7 +16,7 @@ function App() {
       </div>
 
       <div className="card">
-        <RefLogin/>
+        <SimpleForm/>
       </div>
     </>
   )
