@@ -5,13 +5,14 @@ const RefDom = () => {
     const inputRef = useRef()
 
     useEffect(() => {
-        console.log(inputRef.current);
+        console.log(inputRef.current)
         inputRef.current.focus()
+        inputRef.current.value = 'algo'
     }, [])
     
     return (
         <>
-        <input ref = {inputRef} type="text" />
+        <input ref = {inputRef} type=  'text' />
         </>
     )
 }
