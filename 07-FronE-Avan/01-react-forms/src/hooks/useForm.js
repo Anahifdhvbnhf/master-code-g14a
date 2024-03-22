@@ -19,6 +19,24 @@ function useForm (callback, defaults) {
 
     handleInputChange = (event) => {
         const{name, value} = event.target
+        //Equivalente a:
+        //const name = event.target.name
+        //const value  = event.target.value
+
+        console.log(name, value);
+
+        setInput({...input, [name]: value }) //actualizo la data
+    }
+
+    handleSubmit = (event) => {
+        event.preventDefault() //Esto hace que no se recargue la página
+        callback(input)
+    }
+
+    return {
+        input,
+        handleInputChange,
+        handleSubmit
     }
 }
-export default useForm
+export default useForm 
