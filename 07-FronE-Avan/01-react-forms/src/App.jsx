@@ -3,7 +3,8 @@ import reactLogo from './assets/react.svg'
 import './App.css'
 //import RefDom from './components/RefDom'
 //import RefLogin from './components/RefLogin'
-import SimpleForm from './components/SimpleForm'
+//import SimpleForm from './components/SimpleForm'
+import FormHook from './components/FormHook'
 
 function App() {
 
@@ -15,8 +16,10 @@ function App() {
         </a>
       </div>
 
-      <div className="card">
-        <SimpleForm/>
+      <div className="App">
+        <header className= "App-header">
+        <FormHook/>
+        </header>
       </div>
     </>
   )

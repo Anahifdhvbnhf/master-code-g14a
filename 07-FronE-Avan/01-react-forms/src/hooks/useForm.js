@@ -15,7 +15,7 @@ function useForm (callback, defaults) {
     //Cargar los valores por defecto
     useEffect (() => {
         setInput({...defaults}) //spread operator
-    },[])
+    },[defaults])
 
     const handleInputChange = (event) => {
         const{name, value} = event.target
@@ -24,7 +24,6 @@ function useForm (callback, defaults) {
         //const value  = event.target.value
 
         console.log(name, value);
-
         setInput({...input, [name]: value }) //actualizo la data
     }
 
